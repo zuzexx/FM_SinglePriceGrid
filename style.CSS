@@ -42,7 +42,7 @@ p{
 button{
     background-color: hsl(71, 73%, 54%);
     color: white;
-    padding:20px 100px;
+    padding:20px 85px;
     border-radius: 10px;
     border-style: none;
     font-size: 16px;
@@ -82,30 +82,83 @@ button{
     }
     .join{
         grid-area:1/1/2/2;
-        width:350px;
-        margin-left: 50px;
-        margin-right: 50px;
+        max-width: 20em;
+        margin-left: 5em;
+        margin-right: 5em;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
     .monthly{
         grid-area: 2/1/2/3;
-        width:350px;
-        margin-left: 50px;
-        margin-right: 50px;
+        max-width: 20em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
     .why{
         grid-area:3/1/4/2;
-        width:350px;
-        margin-left: 50px;
-        margin-right: 50px;
+        max-width: 20em;
+        margin-left: 5em;
+        margin-right: 5em;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 601px) { 
+main{
+    margin-top: 70px;
+}
+button{
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+p{
+    margin-left: 40px;
+    width: 220px;
+    line-height: 25px;
+}
+h1{
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+h3{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+h2{
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.dollar{
+    margin-left: 40px;
+}
+.join{
+    grid-area:1/1/2/2;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 50em;
+}
+.monthly{
+    grid-area: 2/1/2/3;
+    margin-left: 5em;
+    margin-right: 5em;
+    max-width: 50em;
+}
+.why{
+    grid-area:3/1/4/2;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 50em;
+}
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
