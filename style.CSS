@@ -4,3 +4,34 @@ main{
     display: grid;
     font-family: 'Karla', sans-serif;
 }
+h1{
+   color: hsl(179, 62%, 43%); 
+}
+h3{
+    color:hsl(71, 73%, 54%);
+}
+.join p{
+    color:hsl(218, 22%, 67%);
+}
+h2{
+    color:white;
+}
+p{
+   color:  hsl(204, 43%, 93%);
+   width: 250px;
+   font-size: 16px;
+}
+.monthly{
+    background-color: hsl(179, 62%, 43%);
+}
+.why{
+    background-color: hsl(179, 62%, 47%);
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    padding:20px 100px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 16px;
+}
