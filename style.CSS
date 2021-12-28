@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
-
+body{
+    background-color:hsl(204, 43%, 93%) ;
+}
 main{
     display: grid;
     font-family: 'Karla', sans-serif;
@@ -16,10 +18,20 @@ h3{
 h2{
     color:white;
 }
+.dollar{
+    color:white;
+    font-weight: 700;
+}
+span{
+    font-size: 25px;
+}
 p{
    color:  hsl(204, 43%, 93%);
    width: 250px;
    font-size: 16px;
+}
+.join{
+    background-color: white;
 }
 .monthly{
     background-color: hsl(179, 62%, 43%);
@@ -34,4 +46,72 @@ button{
     border-radius: 10px;
     border-style: none;
     font-size: 16px;
+    font-weight: 700;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        margin-top: 50px;
+    }
+    button{
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+    p{
+        margin-left: 40px;
+        width: 220px;
+        line-height: 25px;
+    }
+    h1{
+        margin-left: 40px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    h3{
+        font-size: 18px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    h2{
+        margin-left: 40px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .dollar{
+        margin-left: 40px;
+    }
+    .join{
+        grid-area:1/1/2/2;
+        width:350px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .monthly{
+        grid-area: 2/1/2/3;
+        width:350px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .why{
+        grid-area:3/1/4/2;
+        width:350px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
