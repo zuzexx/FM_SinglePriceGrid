@@ -1,280 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
-body{
-    background-color:hsl(204, 43%, 93%) ;
+body {
+	font-size: 16px;
+	font-family: 'karla', sans-serif;
 }
-main{
-    display: grid;
-    font-family: 'Karla', sans-serif;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-h1{
-   color: hsl(179, 62%, 43%); 
+main {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(204, 43%, 93%);
+	padding: 100px 30px;
 }
-h3{
-    color:hsl(71, 73%, 54%);
-}
-.join p{
-    color:hsl(218, 22%, 67%);
-}
-h2{
-    color:white;
-}
-.dollar{
-    color:white;
-    font-weight: 700;
-}
-span{
-    font-size: 25px;
-}
-p{
-   color:  hsl(204, 43%, 93%);
-   width: 250px;
-   font-size: 16px;
-}
-.join{
-    background-color: white;
-}
-.monthly{
-    background-color: hsl(179, 62%, 43%);
-}
-.why{
-    background-color: hsl(179, 62%, 47%);
-}
-button{
-    background-color: hsl(71, 73%, 54%);
-    color: white;
-    padding:20px 85px;
-    border-radius: 10px;
-    border-style: none;
-    font-size: 16px;
-    font-weight: 700;
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    main{
-        margin-top: 5vw;
-    }
-    button{
-        margin-bottom: 30px;
-        margin-left: 40px;
-    }
-    p{
-        margin-left: 40px;
-        width: 220px;
-        line-height: 25px;
-    }
-    h1{
-        margin-left: 40px;
-        font-size: 20px;
-        margin-top: 20px;
-    }
-    h3{
-        font-size: 18px;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-    h2{
-        margin-left: 40px;
-        font-size: 20px;
-        margin-top: 20px;
-    }
-    .dollar{
-        margin-left: 40px;
-    }
-    .join{
-        grid-area:1/1/2/2;
-        max-width: 20em;
-        margin-left: 5em;
-        margin-right: 5em;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .monthly{
-        grid-area: 2/1/2/3;
-        max-width: 20em;
-        margin-left: 5em;
-        margin-right: 5em;
-    }
-    .why{
-        grid-area:3/1/4/2;
-        max-width: 20em;
-        margin-left: 5em;
-        margin-right: 5em;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+	max-width: 550px;
+	margin: 0 auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 0px 14px 1px #00000024;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) { 
-main{
-    margin-top: 5vw;
+.join {
+	background-color: white;
+    padding: 30px;
 }
-button{
-    margin-bottom: 40px;
-    margin-left: 40px;
+h1 {
+	color: hsl(179, 62%, 43%);
+	font-weight: 700;
+	font-size: 1.3rem;
+	margin-bottom: 15px;
 }
-p{
-    margin-left: 40px;
-    width: 220px;
-    line-height: 25px;
+h2 {
+	color: hsl(71, 73%, 54%);
+	font-size: 1rem;
+	margin-bottom: 15px;
 }
-h1{
-    margin-left: 40px;
-    font-size: 20px;
-    margin-top: 40px;
+.join p {
+	color: hsl(218, 22%, 67%);
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
-h3{
-    font-size: 18px;
-    margin-left: 40px;
-    margin-top: 40px;
+.monthly {
+	background-color: hsl(179, 62%, 43%);
+    padding: 30px;
 }
-h2{
-    margin-left: 40px;
-    font-size: 20px;
-    margin-top: 40px;
+h3 {
+	color: white;
+	font-weight: 400;
+	font-size: 1.rem;
+	margin-bottom: 15px;
 }
-.dollar{
-    margin-left: 40px;
+.monthly p {
+	color: hsl(204, 43%, 93%);
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 10px;
 }
-.join{
-    grid-area:1/1/2/2;
-    margin-left: 5em;
-    margin-right: 5em;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    max-width: 50em;
+span {
+	font-size: 2.5rem;
+	font-weight: 600;
 }
-.monthly{
-    grid-area: 2/1/3/2;
-    margin-left: 5em;
-    margin-right: 5em;
-    max-width: 50em;
+button {
+	text-align: center;
+	width: 100%;
+	padding: 15px;
+     border-style: none;
+	border-radius: 8px;
+	display: inline-block;
+	background-color: hsl(71, 73%, 54%);
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	margin-top: 30px;
+	font-weight: 700;
+	box-shadow: 0px 4px 10px 1px #00000033;
 }
-.why{
-    grid-area:3/1/4/2;
-    margin-left: 5em;
-    margin-right: 5em;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    max-width: 50em;
+.why {
+	background-color: #4abebd;
+  padding: 30px;
 }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    main{
-        margin-top: 5vw;
-    }
-    button{
-        margin-bottom: 40px;
-        margin-left: 40px;
-    }
-    .join p{
-        margin-left: 40px;
-        width: 30em;
-        line-height: 25px;
-    }
-    h1{
-        margin-left: 40px;
-        font-size: 20px;
-        margin-top: 40px;
-    }
-    h3{
-        font-size: 18px;
-        margin-left: 40px;
-        margin-top: 40px;
-    }
-    h2{
-        margin-left: 40px;
-        font-size: 20px;
-        margin-top: 40px;
-    }
-    .dollar{
-        margin-left: 40px;
-    }
-    .join{
-        grid-area:1/1/2/2;
-        margin-left: 10em;
-        margin-right: 10em;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        max-width: 40em;
-    }
-    .monthly{
-        grid-area: 2/1/3/2;
-        margin-left: 10em;
-        margin-right: 10em;
-        max-width: 40em;
-    }
-    .why{
-        grid-area:3/1/4/2;
-        margin-right: 10em;
-        margin-left: 10em;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        max-width: 40em;
-    }
-    
+.why p {
+	color: hsl(204, 43%, 93%);
+	line-height: 1.5rem;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 992px) {
-    main{
-        margin-top: 10vw;
-    }
-    button{
-        margin-bottom: 40px;
-        margin-left: 40px;
-    }
-    .join p{
-        margin-left: 2em;
-        margin-right: 2em;
-        max-width: 35vw;
-        line-height: 25px;
-    }
-    p{
-        max-width: 20vw;
-    }
-    button{
-        margin-right: 2em;
-    }
-    h1{
-        margin-left: 2em;
-        font-size: 20px;
-        margin-top: 40px;
-    }
-    h3{
-        font-size: 18px;
-        margin-left: 2em;
-        margin-top: 40px;
-    }
-    h2{
-        margin-left: 2em;
-        font-size: 20px;
-        margin-top: 40px;
-    }
-    .dollar{
-        margin-left: 2em;
-    }
-    .join{
-        grid-area:1/1/2/3;
-        margin-left: 30vw;
-        margin-right: 30vw;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        width: 40vw;
-    }
-    .monthly{
-        grid-area: 2/1/3/2;
-        margin-left: 30vw;
-        width: 20vw;
-        border-bottom-left-radius: 10px;
-    }
-    .why{
-        grid-area:2/2/3/3;
-        border-bottom-right-radius: 10px;
-        width: 20vw;
-        margin-left: -30vw;
-    }
-
+	.container {
+		grid-template-columns: 1fr 1fr;
+	}
+	.join{
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	.monthly, .why {
+		grid-row: 2;
+	}
 }
