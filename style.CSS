@@ -27,10 +27,6 @@ main {
 	box-shadow: 0px 0px 14px 1px #00000024;
 }
 
-.join {
-	background-color: white;
-    padding: 30px;
-}
 h1 {
 	color: hsl(179, 62%, 43%);
 	font-weight: 700;
@@ -42,26 +38,38 @@ h2 {
 	font-size: 1rem;
 	margin-bottom: 15px;
 }
-.join p {
-	color: hsl(218, 22%, 67%);
-	font-size: 1rem;
-	line-height: 1.5rem;
-}
-.monthly {
-	background-color: hsl(179, 62%, 43%);
-    padding: 30px;
-}
 h3 {
 	color: white;
 	font-weight: 400;
 	font-size: 1.rem;
 	margin-bottom: 15px;
 }
+.join {
+	background-color: white;
+    padding: 30px;
+}
+.monthly {
+	background-color: hsl(179, 62%, 43%);
+    padding: 30px;
+}
+.why {
+	background-color: #4abebd;
+  padding: 30px;
+}
+.join p {
+	color: hsl(218, 22%, 67%);
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
 .monthly p {
 	color: hsl(204, 43%, 93%);
 	font-size: 1rem;
 	font-weight: 400;
 	margin-bottom: 10px;
+}
+.why p {
+	color: hsl(204, 43%, 93%);
+	line-height: 1.5rem;
 }
 span {
 	font-size: 2.5rem;
@@ -82,15 +90,6 @@ button {
 	font-weight: 700;
 	box-shadow: 0px 4px 10px 1px #00000033;
 }
-.why {
-	background-color: #4abebd;
-  padding: 30px;
-}
-.why p {
-	color: hsl(204, 43%, 93%);
-	line-height: 1.5rem;
-}
-
 @media only screen and (min-width: 992px) {
 	.container {
 		grid-template-columns: 1fr 1fr;
