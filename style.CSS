@@ -20,7 +20,7 @@ main {
 .container {
 	display: grid;
 	grid-template-columns: 100%;
-	max-width: 650px;
+	max-width: 600px;
 	margin: 0 auto;
 	border-radius: 8px;
 	overflow: hidden;
